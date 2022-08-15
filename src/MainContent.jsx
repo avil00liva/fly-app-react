@@ -18,7 +18,6 @@ const MainContent = ()=>{
         <Form showForm={showForm} />
         <Records />
       </div>
-      <Footer />
     </div>
   )
 }

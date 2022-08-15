@@ -14,7 +14,6 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Readex Pro', sans-serif;
-  color: var(--text-c-primary);
 }
 
 .container {
@@ -77,6 +76,7 @@ nav {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  color: var(--text-c-primary);
 }
 .mainContent {
   width: 100%;
@@ -109,7 +109,7 @@ nav {
   padding: 1.5rem;
   animation: show .3s ease;
   margin-bottom: 1.5rem;
-} .formComponent .formImg {
+} .formImg {
   position: absolute;
   right: 0;
   bottom: 0;
@@ -183,12 +183,24 @@ select {
   animation: spin 1s linear infinite;
 }
 
+.recordsMainContainer {
+  width: 100%;
+  height: 520px;
+  position: relative;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
 .recordsContainer {
   margin-top: 1.5rem;
   margin-bottom: 1rem;
   width: 100%;
   min-height: 200px;
   display: flex;
+  background-color: var(--bg-primry);
   /*justify-content: center;*/
   /*align-items: flex-start;*/
   flex-direction: column;
@@ -196,7 +208,7 @@ select {
   border-radius: 1rem;
   padding:.5rem .5rem 2rem .5rem;
   gap: 1rem;
-
+  z-index: 200;
 
   max-height: 360px;
   overflow: hidden;
@@ -249,6 +261,8 @@ select {
   justify-content: space-between;
   align-items: flex-start;
   position: relative;
+  background: var(--text-c-primary);
+  color: var(--bg-primry);
 }
 .tos {
   display: flex;
@@ -295,7 +309,7 @@ select {
     padding: 1rem 2.5rem;
   }
   .recordsContainer {
-    width: 100%;
+    width: 80%;
     max-height: 300px;
     overflow: hidden;
     overflow-y: auto;
