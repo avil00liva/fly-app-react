@@ -225,6 +225,8 @@ select {
   justify-content: space-between;
   align-items: center;
   transition: 300ms ease;
+  gap: 1rem;
+  flex-wrap: wrap;
 
 
   padding: 1rem;
@@ -238,7 +240,6 @@ select {
   flex-direction: column-reverse;
 }
 .flyData {
-  width: 50%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -302,6 +303,13 @@ select {
   .recordsMainContainer {
     padding: 1.5rem;
   }
+  .recordCard {
+    flex-wrap: nowrap;
+    gap: 0;
+  }
+  .flyData {
+    width: 50%;
+   }
 }
 
 @media screen and (min-width: 1020px){
